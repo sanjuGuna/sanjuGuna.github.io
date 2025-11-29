@@ -3,16 +3,47 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
+import { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    toast({
-      title: "Message Sent!",
-      description: "Thanks for reaching out. I'll get back to you soon!",
-    });
+    setIsSubmitting(true);
+
+    try {
+      const formData = new FormData(e.currentTarget);
+      const templateParams = {
+        from_name: formData.get("name"),
+        from_email: formData.get("email"),
+        message: formData.get("message"),
+      };
+
+      await emailjs.send(
+        "service_uzebioo",
+        "template_c15st8q",
+        templateParams,
+        "zK6Uir1oer4WBjbiD"
+      );
+
+      toast({
+        title: "Message Sent!",
+        description: "Thanks for reaching out. I'll get back to you soon!",
+      });
+
+      e.currentTarget.reset();
+    } catch (error) {
+      toast({
+        title: "Failed to send message",
+        description: "Please try again or contact me directly via email.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const contactInfo = [
@@ -122,9 +153,9 @@ const Contact = () => {
                 />
               </div>
 
-              <Button type="submit" className="gradient-bg w-full">
+              <Button type="submit" className="gradient-bg w-full" disabled={isSubmitting}>
                 <Send className="w-4 h-4 mr-2" />
-                Send Message
+                {isSubmitting ? "Sending..." : "Send Message"}
               </Button>
             </form>
           </div>
