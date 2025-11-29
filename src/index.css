@@ -8,41 +8,41 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 98%;
-    --foreground: 240 28% 14%;
+    --background: 215 50% 98%;
+    --foreground: 0 0% 10%;
 
     --card: 0 0% 100%;
-    --card-foreground: 240 28% 14%;
+    --card-foreground: 0 0% 10%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 240 28% 14%;
+    --popover-foreground: 0 0% 10%;
 
-    --primary: 166 100% 60%;
-    --primary-foreground: 240 28% 14%;
+    --primary: 215 100% 62%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 100% 50%;
+    --secondary: 248 100% 69%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 0 0% 96%;
-    --muted-foreground: 219 13% 46%;
+    --muted: 215 30% 95%;
+    --muted-foreground: 0 0% 45%;
 
-    --accent: 166 100% 60%;
-    --accent-foreground: 240 28% 14%;
+    --accent: 271 76% 53%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 90%;
-    --input: 0 0% 90%;
-    --ring: 166 100% 60%;
+    --border: 215 20% 90%;
+    --input: 215 20% 90%;
+    --ring: 215 100% 62%;
 
     --radius: 1rem;
     
     /* Custom portfolio colors */
-    --hero-gradient-start: 166 100% 60%;
-    --hero-gradient-end: 210 100% 50%;
-    --card-glow: 166 100% 60%;
-    --skill-bg: 166 20% 97%;
+    --hero-gradient-start: 215 100% 62%;
+    --hero-gradient-end: 271 76% 53%;
+    --card-glow: 248 100% 69%;
+    --skill-bg: 215 100% 97%;
 
     --sidebar-background: 0 0% 98%;
 
@@ -62,38 +62,38 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 240 28% 14%;
+    --background: 240 10% 8%;
     --foreground: 0 0% 98%;
 
-    --card: 240 20% 18%;
+    --card: 240 8% 12%;
     --card-foreground: 0 0% 98%;
 
-    --popover: 240 20% 18%;
+    --popover: 240 8% 12%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 166 100% 60%;
-    --primary-foreground: 240 28% 14%;
+    --primary: 215 100% 62%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 100% 50%;
+    --secondary: 248 100% 69%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 240 15% 22%;
-    --muted-foreground: 219 13% 60%;
+    --muted: 240 8% 15%;
+    --muted-foreground: 0 0% 65%;
 
-    --accent: 166 100% 60%;
-    --accent-foreground: 240 28% 14%;
+    --accent: 271 76% 53%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 50%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 240 15% 25%;
-    --input: 240 15% 25%;
-    --ring: 166 100% 60%;
+    --border: 240 8% 20%;
+    --input: 240 8% 20%;
+    --ring: 215 100% 62%;
     
-    --hero-gradient-start: 166 100% 60%;
-    --hero-gradient-end: 210 100% 50%;
-    --card-glow: 166 100% 60%;
-    --skill-bg: 240 15% 22%;
+    --hero-gradient-start: 215 100% 62%;
+    --hero-gradient-end: 271 76% 53%;
+    --card-glow: 248 100% 69%;
+    --skill-bg: 240 8% 15%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
