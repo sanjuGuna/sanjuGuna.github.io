@@ -36,22 +36,24 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-20">
+    <section id="skills" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl md:text-5xl font-display font-bold mb-12 text-center">
           Technical <span className="gradient-text">Skills</span>
         </h2>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mt-8">
           {skillCategories.map((category, index) => (
             <div
               key={index}
-              className="bg-card p-6 rounded-2xl border border-border hover:card-glow transition-all duration-300 hover:scale-105"
+              className="relative overflow-hidden bg-card p-6 rounded-2xl border border-border/60 hover:card-glow hover:-translate-y-1 transition-all duration-300 group"
               style={{
                 animationDelay: `${index * 100}ms`,
               }}
             >
-              <div className="w-12 h-12 gradient-bg rounded-xl flex items-center justify-center mb-4">
+              <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+
+              <div className="w-12 h-12 gradient-bg rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                 <category.icon className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-xl font-display font-bold mb-4">
@@ -62,7 +64,7 @@ const Skills = () => {
                   <Badge
                     key={skillIndex}
                     variant="secondary"
-                    className="bg-muted hover:bg-primary hover:text-primary-foreground transition-colors"
+                    className="rounded-full px-3 py-1 bg-muted text-xs font-medium text-muted-foreground border border-border/60 hover:bg-primary/10 hover:text-primary transition-colors"
                   >
                     {skill}
                   </Badge>
