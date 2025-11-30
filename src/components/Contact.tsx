@@ -22,12 +22,16 @@ const Contact = () => {
         message: formData.get("message"),
       };
 
-      await emailjs.send(
+      console.log("Sending email with params:", templateParams);
+
+      const result = await emailjs.send(
         "service_uzebioo",
         "template_c15st8q",
         templateParams,
         "zK6Uir1oer4WBjbiD"
       );
+
+      console.log("Email sent successfully:", result);
 
       toast({
         title: "Message Sent!",
@@ -36,6 +40,7 @@ const Contact = () => {
 
       e.currentTarget.reset();
     } catch (error) {
+      console.error("Error sending email:", error);
       toast({
         title: "Failed to send message",
         description: "Please try again or contact me directly via email.",
