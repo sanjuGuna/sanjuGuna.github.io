@@ -18,7 +18,7 @@ My expertise includes **full-stack development**, focusing on **React**, **Pytho
 
 The best way to experience my work is to visit the live site!
 
-👉 **View Portfolio:** 
+👉 **View Portfolio:**  https://sanjuguna.github.io/
 
 ---
 
