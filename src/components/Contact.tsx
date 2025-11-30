@@ -121,6 +121,7 @@ const Contact = () => {
                 </label>
                 <Input
                   id="name"
+                  name="name"
                   placeholder="Your name"
                   required
                   className="bg-background"
@@ -133,6 +134,7 @@ const Contact = () => {
                 </label>
                 <Input
                   id="email"
+                  name="email"
                   type="email"
                   placeholder="your.email@example.com"
                   required
@@ -146,6 +148,7 @@ const Contact = () => {
                 </label>
                 <Textarea
                   id="message"
+                  name="message"
                   placeholder="Your message..."
                   rows={5}
                   required
