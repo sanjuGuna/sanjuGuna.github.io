@@ -12,35 +12,31 @@ const Contact = () => {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    const form = e.currentTarget;
     setIsSubmitting(true);
 
     try {
-      const formData = new FormData(e.currentTarget);
+      const formData = new FormData(form);
       const templateParams = {
         from_name: formData.get("name"),
         from_email: formData.get("email"),
         message: formData.get("message"),
       };
 
-      console.log("Sending email with params:", templateParams);
-
-      const result = await emailjs.send(
+      await emailjs.send(
         "service_uzebioo",
         "template_c15st8q",
         templateParams,
         "zK6Uir1oer4WBjbiD"
       );
 
-      console.log("Email sent successfully:", result);
-
       toast({
         title: "Message Sent!",
         description: "Thanks for reaching out. I'll get back to you soon!",
       });
 
-      e.currentTarget.reset();
+      form.reset();
     } catch (error) {
-      console.error("Error sending email:", error);
       toast({
         title: "Failed to send message",
         description: "Please try again or contact me directly via email.",
