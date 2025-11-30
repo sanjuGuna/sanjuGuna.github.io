@@ -1,73 +1,65 @@
-# Welcome to your Lovable project
+# 🌐 Sanjay G - Personal Portfolio Source Code
 
-## Project info
+This repository contains the source code for my personal portfolio website, built to showcase my skills, projects, certifications, and experience as a Software Engineering student.
 
-**URL**: https://lovable.dev/projects/66dcb726-9274-42a4-9c30-162797db4b35
+The portfolio serves as a digital resume where recruiters and collaborators can explore my work and learn more about me.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 👤 About Me
 
-**Use Lovable**
+I’m **Sanjay Gunasekaran**, a motivated Software Engineering student passionate about creating clean, user-focused digital experiences.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/66dcb726-9274-42a4-9c30-162797db4b35) and start prompting.
+My expertise includes **full-stack development**, focusing on **React**, **Python**, **FastAPI**, and **Data Engineering**. This portfolio highlights my journey, skills, key projects, and accomplishments in these areas.
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+## 🚀 Live Demo
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+The best way to experience my work is to visit the live site!
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+👉 **View Portfolio:** 
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 🛠️ Tech Stack
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+This portfolio website is built using a modern, performance-focused frontend stack:
 
-# Step 3: Install the necessary dependencies.
-npm i
+* **Framework:** React + TypeScript
+* **Build Tool:** Vite (for fast performance and setup)
+* **Styling:** Tailwind CSS
+* **UI Components:** shadcn/ui
+* **Icons:** React Icons / Lucide
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+---
 
-**Edit a file directly in GitHub**
+## ✨ Features
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+The portfolio is designed with the user experience and maintainability in mind:
 
-**Use GitHub Codespaces**
+* **Clean, modern UI**
+* **Fully responsive design** (works on all devices)
+* **Dedicated Project showcase section**
+* **Detailed Skills & certifications display**
+* **Contact section** with email form
+* **Fast performance**
+* **Smooth animations & polished layout**
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+---
 
-## What technologies are used for this project?
+## 📁 Repository Purpose
 
-This project is built with:
+This repository is primarily used to maintain and update my personal portfolio.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+All commits represent improvements to the UI, updates to project content, design refinements, and technology upgrades.
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/66dcb726-9274-42a4-9c30-162797db4b35) and click on Share -> Publish.
+## 📬 Contact & Connect
 
-## Can I connect a custom domain to my Lovable project?
+I'm always open to discussing new projects, collaboration opportunities, or full-time roles. Feel free to connect!
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+* **📧 Email:** `sanjaygunasekaran06@gmail.com`
+* **🔗 LinkedIn:** `www.linkedin.com/in/sanjaygunasekaran`
+* **🐙 GitHub:** `https://github.com/sanjuGuna/`
