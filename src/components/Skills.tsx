@@ -1,4 +1,4 @@
-import { Code, Database, Layout, Server, Boxes, Terminal, Activity, GitBranch } from "lucide-react";
+import { Code, Database, Layout, Server, Boxes, Terminal, Activity, GitFork } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
 const Skills = () => {
@@ -39,7 +39,7 @@ const Skills = () => {
       skills: ["Apache Airflow", "Kafka Producers & Consumers"],
     },
     {
-      icon: GitBranch,
+      icon: GitFork,
       title: "Tools & DevOps Basics",
       skills: ["Git & GitHub", "Docker (Basics)", "Linux Fundamentals"],
     }
