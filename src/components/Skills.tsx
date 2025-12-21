@@ -1,4 +1,4 @@
-import { Code, Database, Layout, Server, Boxes, Terminal } from "lucide-react";
+import { Code, Database, Layout, Server, Boxes, Terminal, Activity, GitBranch } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
 const Skills = () => {
@@ -6,7 +6,7 @@ const Skills = () => {
     {
       icon: Terminal,
       title: "Programming Languages",
-      skills: ["Python", "Java", "C", "JavaScript"],
+      skills: ["Java", "Python", "C", "JavaScript"],
     },
     {
       icon: Layout,
@@ -21,18 +21,28 @@ const Skills = () => {
     {
       icon: Server,
       title: "Backend Development",
-      skills: ["FastAPI", "Flask", "REST API Integration", "OOP"],
+      skills: ["Node.js", "Express.js", "FastAPI", "Flask", "REST API Integration"],
     },
     {
       icon: Database,
       title: "Database Management",
-      skills: ["SQL", "MySQL", "MongoDB"],
+      skills: ["MySQL", "MongoDB"],
     },
     {
       icon: Boxes,
       title: "Big Data & Processing",
-      skills: ["Hadoop", "Spark", "Hive"],
+      skills: ["Hadoop", "Spark", "Hive", "kafka"],
     },
+    {
+      icon: Activity,
+      title: "Orchestration & Streaming",
+      skills: ["Apache Airflow", "Kafka Producers & Consumers"],
+    },
+    {
+      icon: GitBranch,
+      title: "Tools & DevOps Basics",
+      skills: ["Git & GitHub", "Docker (Basics)", "Linux Fundamentals"],
+    }
   ];
 
   return (
