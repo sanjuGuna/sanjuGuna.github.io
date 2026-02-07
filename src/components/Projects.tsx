@@ -38,6 +38,14 @@ const Projects = () => {
       github: "https://github.com/sanjuGuna/communeDB.git",
       demo: null,
       image: "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=600&h=400&fit=crop",
+    },{
+      title: "Real-time ETL Pipeline",
+      description:
+        "Areal-time streaming `ETL pipeline that ingests data into Kafka, transforms it using Spark Structured Streaming, and stores analytics-ready data in Cassandra, orchestrated with Airflow and containerized using Docker.",
+      tech: ["Airflow", "Kafka", "Spark", "Cassandra","Docker"],
+      github: "https://github.com/sanjuGuna/real-time-etl-pipeline",
+      demo: null,
+      image: "https://i.postimg.cc/hPyLtX7j/Pasted-image.png",
     },
   ];
 
