@@ -19,7 +19,7 @@ const Hero = () => {
             <h1 className="text-5xl md:text-7xl font-display font-bold leading-tight">
               <span className="gradient-text">Aspiring</span>
               <br />
-              Software
+              Data
               <br />
               Engineer
             </h1>

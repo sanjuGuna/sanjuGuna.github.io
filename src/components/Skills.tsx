@@ -11,7 +11,7 @@ const Skills = () => {
     {
       icon: Layout,
       title: "Web Technologies",
-      skills: ["HTML", "CSS", "Responsive Design", "Accessibility"],
+      skills: ["HTML", "CSS"],
     },
     {
       icon: Code,
@@ -31,7 +31,7 @@ const Skills = () => {
     {
       icon: Boxes,
       title: "Big Data & Processing",
-      skills: ["Hadoop", "Spark", "Hive", "kafka"],
+      skills: ["Hadoop", "Spark", "Hive", "Airflow", "kafka"],
     },
   ];
 

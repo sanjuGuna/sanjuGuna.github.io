@@ -22,7 +22,7 @@ const Services = () => {
     },
     {
       icon: Database,
-      title: "Data Engineering Basics",
+      title: "Data Engineering",
       description:
         "Working with ETL pipelines, data processing workflows, and big data technologies like Hadoop and Spark for efficient data management.",
     },
